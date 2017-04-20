@@ -1,0 +1,20 @@
+﻿{
+  "author": "Jeremy Lindsay <https://jeremylindsayni.wordpress.com>",
+  "classifications": [ "IoT", "Web", "WebAPI" ], 
+  "name": "Empty .NET Core WebAPI project for the Raspberry Pi",
+  "identity": "IoT.Core.WebApi",
+  "shortName": "piwebapi",
+  "tags": {
+    "language": "C#"
+  },
+  "sourceName": "piwebapi",
+  "symbols": {
+    "runtime": {
+      "type": "parameter",
+      "datatype": "string",
+      "replaces": "RUNTIME-FRAMEWORK-VERSION",
+      "defaultValue": "2.0.0-preview1-002028-00",
+      "description": "The .NET Core runtime framework to use."
+    }
+  }
+}
