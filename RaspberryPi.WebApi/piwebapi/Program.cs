@@ -17,7 +17,7 @@ namespace piwebapi
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
-                .UseUrls("http://*:8000")
+                .UseUrls("http://*:5000")
                 .ConfigureAppConfiguration((context, configBuilder) => {
                     configBuilder
                         .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
