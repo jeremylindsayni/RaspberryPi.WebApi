@@ -24,7 +24,7 @@ Invoke-Command -Session $session {
 
 Write-Host "Scheduling to run at startup"
 Invoke-Command -Session $session {
-	schtasks /create /tn "WebApps\$using:applicationName" /tr "$using:localDestination\$applicationName.exe" /sc onstart /ru SYSTEM
+	schtasks /create /tn "WebApps\$using:applicationName" /tr "$using:localDestination\$using:applicationName.exe" /sc onstart /ru SYSTEM
 	#does not work on windows iot core
 	#$action = New-ScheduledTaskAction -Execute "$using:localDestination\$using:applicationName.exe"
 	#$trigger = New-ScheduledTaskTrigger -AtStartup
